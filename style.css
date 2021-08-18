@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap'); 
+:root {
+    --dark-gray: #f0f2f7;
+    --primary-color: #FECACA;
+    --dark-blue:#25233f;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+.margin-md {
+    margin: 2rem;
+}
+.container {
+    padding: 0rem 1rem;
+    margin: auto;
+}
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+.navigation {
+    background-color: var(--primary-color);
+    color: var(--dark-blue); 
+    padding: 0.2rem;
+}
+.navigation .nav-brand {
+    font-weight: medium 500;
+    margin: 0 2rem;
+    font-size: 4rem;
+    display: inline;
+}
+.navigation .nav-pills{
+    margin-right: 3rem; 
+    margin-left: 40rem;   
+    text-align: right;
+    display: inline;
+}
+.navigation .link {
+    color: var(--dark-blue); 
+}
+
+.section {
+    padding: 2rem;
+    margin: 1rem 18rem;
+    height: 19rem;
+}
+.section h1 {
+    text-align: center;
+}
+h1,span{
+    text-align: center;
+    display: block;
+    margin-bottom: 0.7rem;
+}
+#angle1,#angle2,#angle3,#base,#height,#len1,#len2,#len3{
+    margin: 1rem 12rem;
+    padding: 0.4rem;
+    text-align: center;
+    display: block;
+    border-radius: 0.4rem;
+    border: 1px solid;
+}
+button{
+    margin: 1rem 15rem;
+    border: 1px solid  #FECACA;
+    background-color: #FECACA;
+    padding: 0.6rem;
+    border-radius: 0.7rem;
+    font-size: medium;
+}
+.section1{
+    margin: 1rem 10rem; 
+}
+.radiobtn{
+    display: inline-block;
+    padding: 2rem 15rem;
+}
+.radioop{
+    margin: 1.5rem auto;
+}
+#ans1{
+    margin-left: 22rem;
+}
+#ans2{
+    margin-left: 20rem;
+}
+#ans3{
+    margin-left: 19rem;
+}
+#ans4{
+    margin-left: 14rem;
+}
+#btn2{
+    margin-left:26rem ;
+}
+#disquiz{
+    margin-left: 1rem;
+}
