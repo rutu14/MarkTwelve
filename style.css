@@ -20,6 +20,10 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
+.active{
+    text-decoration: solid underline rgb(71, 69, 71) 4px;
+    font-size: larger;
+}
 .list-non-bullet {
     list-style: none;
     padding-inline-start: 0px;
@@ -41,10 +45,9 @@ body {
     display: inline;
 }
 .navigation .nav-pills{
-    margin-right: 3rem; 
-    margin-left: 40rem;   
-    text-align: right;
     display: inline;
+    padding: 2rem;
+    margin: 0 17rem;
 }
 .navigation .link {
     color: var(--dark-blue); 
@@ -53,7 +56,7 @@ body {
 .section {
     padding: 2rem;
     margin: 1rem 18rem;
-    height: 19rem;
+    margin-top: 0;
 }
 .section h1 {
     text-align: center;
