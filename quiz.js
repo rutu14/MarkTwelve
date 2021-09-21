@@ -1,5 +1,7 @@
 var btn2=document.querySelector("#btn2")
 var radio=document.querySelectorAll(".radiobtn")
+var clear= document.querySelector(".material-icons-outlined")
+
 ans = [];
 rightans = ["no","no","no","yes","no","yes","no","no","no","yes","no","no","no","yes","no","no"];
 btn2.addEventListener("click",function clickEventHandler(){
@@ -40,4 +42,13 @@ btn2.addEventListener("click",function clickEventHandler(){
     }
     
 
+})
+clear.addEventListener("click",function clickEventHandler(){
+  
+    radio.forEach(function(){
+        for ( i = 0; i < radio.length; i++ ){
+            radio[i].checked = ""; 
+        }});
+    disquiz.innerText = "";
+    
 })

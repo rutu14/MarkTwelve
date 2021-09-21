@@ -1,6 +1,8 @@
 var btn3=document.querySelector("#btn3")
 var base=document.querySelector("#base")
 var height=document.querySelector("#height")
+var clear= document.querySelector(".material-icons-outlined")
+
 
 btn3.addEventListener("click",function clickEventHandler(){
     basecheck = Number( base.value );
@@ -18,6 +20,10 @@ btn3.addEventListener("click",function clickEventHandler(){
         ans = Math.sqrt ( sum );
         dishypo.innerText = " The length is " + ans.toFixed(2);
     }
+})
+clear.addEventListener("click",function clickEventHandler(){
+    base.value = "";
+    height.value = "";
+    dishypo.innerText = "";
     
-
 })

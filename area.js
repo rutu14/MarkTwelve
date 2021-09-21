@@ -1,12 +1,14 @@
-var len1=document.querySelector("#len1")
-var len2=document.querySelector("#len2")
-var len3=document.querySelector("#len3")
-var btn3=document.querySelector("#btn3")
+var len1 = document.querySelector("#len1")
+var len2 = document.querySelector("#len2")
+var len3 = document.querySelector("#len3")
+var btn3 = document.querySelector("#btn3")
+var clear = document.querySelector(".material-icons-outlined")
+
+
 btn3.addEventListener("click",function clickEventHandler(){
   first = Number(len1.value);
   second = Number(len2.value);
   third = Number(len3.value);
-  console.log(first,second,third)
 
   if(first == "" || first == null || first == 0, second == "" || second == null || second == 0, third == "" || third == null || third == 0 ) {
     disarea.innerHTML=" Enter values to proceed ahead!  "
@@ -22,4 +24,11 @@ btn3.addEventListener("click",function clickEventHandler(){
   else {
     disarea.innerText = " Enter valid side length ";    
   }
+})
+clear.addEventListener("click",function clickEventHandler(){
+  len1.value = "";
+  len2.value = "";
+  len3.value = "";
+  disarea.innerText = "";
+  
 })

@@ -52,7 +52,41 @@ body {
 .navigation .link {
     color: var(--dark-blue); 
 }
-
+.material-icons-outlined{
+    display: inline-block;
+    cursor: pointer;
+}
+.tooltip {
+    position: relative;
+}
+ .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 7rem;
+    background-color: var(--dark-blue);
+    color: var(--dark-gray);
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 3px 0;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 .section {
     padding: 2rem;
     margin: 1rem 18rem;
@@ -64,10 +98,11 @@ body {
 h1,span{
     text-align: center;
     display: block;
-    margin-bottom: 0.7rem;
+    margin: 0.7rem 0;
+    font-size: 1.2rem;
 }
 #angle1,#angle2,#angle3,#base,#height,#len1,#len2,#len3{
-    margin: 1rem 12rem;
+    margin: 1rem auto;
     padding: 0.4rem;
     text-align: center;
     display: block;
@@ -81,6 +116,11 @@ button{
     padding: 0.6rem;
     border-radius: 0.7rem;
     font-size: medium;
+    cursor: pointer;
+}
+#disangle{
+    font-size: large;
+    padding: 2rem;
 }
 .section1{
     margin: 1rem 10rem; 
@@ -102,11 +142,8 @@ button{
     margin-left: 19rem;
 }
 #ans4{
-    margin-left: 14rem;
+    margin-left: 16rem;
 }
 #btn2{
     margin-left:26rem ;
-}
-#disquiz{
-    margin-left: 1rem;
 }

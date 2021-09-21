@@ -3,6 +3,7 @@ var angle2=document.querySelector("#angle2")
 var angle3=document.querySelector("#angle3")
 var btn1=document.querySelector("#btn1")
 var disangle=document.querySelector("#disangle")
+var clear= document.querySelector(".material-icons-outlined")
 
 btn1.addEventListener("click",function clickEventHandler(){
     
@@ -24,4 +25,12 @@ btn1.addEventListener("click",function clickEventHandler(){
         disangle.innerText = " Check your values again! ";
     }
 
+})
+
+clear.addEventListener("click",function clickEventHandler(){
+    angle1.value = "";
+    angle2.value = "";
+    angle3.value = "";
+    disangle.innerText = "";
+    
 })
